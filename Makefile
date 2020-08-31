@@ -4,7 +4,7 @@ INSTALL_DIR ?= $(DESTDIR)$(PREFIX)/share/themes/elkowars_phocus
 
 all:
 	mkdir -p gtk-3.0
-	sass scss/gtk-3.0/gtk.scss gtk-3.0/gtk.css
+	sassc scss/gtk-3.0/gtk.scss gtk-3.0/gtk.css
 
 install:
 	@install -v -d "$(INSTALL_DIR)"
