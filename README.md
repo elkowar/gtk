@@ -10,14 +10,14 @@ gtk = {
   enable = true;
   theme = let
       phocus = pkgs.stdenv.mkDerivation {
-        name = "phocus";
+        name = "elkowars_phocus";
         src = builtins.fetchTarball https://github.com/elkowar/gtk/archive/master.tar.gz;
         nativeBuildInputs = [ pkgs.sass ];
         installFlags = [ "DESTDIR=$(out)" "PREFIX=" ];
       };
     in {
     package = phocus;
-    name = "phocus";
+    name = "elkowars_phocus";
   };
 };
 ```
